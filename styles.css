@@ -1,0 +1,354 @@
+@import url('Fonts/Satoshi-Regular.woff');
+@font-face {
+    font-family: Sackers;
+    src: url('Fonts/Monotype\ -\ Sackers\ Gothic\ Medium.ttf');
+}
+@font-face {
+    font-family: IvyPresto;
+    src: url('Fonts/IvyPresto-Display-Light.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Satoshi;
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration:none;
+}
+
+.nav a:hover {
+    background-color: grey;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 20px;
+    font-weight:lighter;
+    border-bottom: 1px solid grey;
+}
+
+.main-nav li {
+    padding: 0 5%;
+    border-spacing: 20px;
+}
+.main-head {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url('Images/Arami\ at\ Fashion\ Souk.jpeg');
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.band-name {
+    text-align: center;
+    font-size: 60px;
+    font-family: Sackers;
+    font-weight: 100;
+    text-transform: lowercase;
+    color: white;
+    margin: 0;
+}
+
+.band-name-large {
+    font-size: 5em;
+}
+
+.section-style {
+    margin: 30px;
+   }
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em
+   }
+   
+.section-title {
+        text-align:center;
+        font-family: IvyPresto;
+        font-size: 30px;
+        font-weight: lighter;
+        color: black;
+}
+
+.about-section-image {
+    float: left;
+    height: 200px;
+    width: 400px;
+    margin: 15px 15px 15px 0;
+    border-radius: 50%;
+}
+
+.body-text {
+    text-align: justify;
+}
+
+.main-footer {
+    background-color: orange;
+    padding: .25em 0;
+    color: white;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.main-footer-container h3 {
+    font-size: 40px;
+}
+
+.footer-nav li {
+    padding: 0 .1em
+}
+
+.footer-nav img {
+    width: 70px;
+    height: 30px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    cursor:pointer
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid orange;
+    border-radius: 8px;
+    padding: 15px 40px;
+    font: 1.5em;
+}
+
+.btn-header:hover {
+    background-color: orange;
+    color: white;
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: orange;
+    font-size: 3em;
+    border-radius: 50%;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border-bottom: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    font-weight: bold;
+    width: 15%;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.btn-primary {
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    border: 1px solid orange;
+    color: black;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+    width: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px
+}
+
+.shop-item-price {
+    flex: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    cursor: pointer;
+    background-color: orange;
+    color: black;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid orange;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 120px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+    padding: 20px;
+    padding-right: ;
+}
+
